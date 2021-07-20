@@ -1,0 +1,11 @@
+//staric triangle using for loop
+
+let z , j;
+for(z=5; z>=1; z--)
+{
+    for(j=1; j<=z; j++)
+    {
+        document.write("*");
+    }
+    document.write("<br/>")
+}
