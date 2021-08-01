@@ -1,0 +1,143 @@
+program 1
+
+ var city = prompt("please enter your city name ");
+  if(city == "karachi"){
+      alert("Welcome to the city of lights");
+  }else if(city == "lahore"){
+      alert("welcome to the city Sultan");
+  }else if(city == "Peshawar"){
+      alert("welcome to the city of Lions");
+  }else {
+      alert("plesae try again");
+  }
+
+
+program 2
+
+var signal = prompt("please enter the color to see you on the signal");
+
+ if(signal == "red"){
+     alert("Must Stop");
+ }else if(signal == "Yellow"){
+     alert("Reay to move");
+ }else if(signal == "green"){
+     alert("Move now");
+ }else{
+     alert("enter the right color");
+ }
+
+//program 3 percentage finder
+
+var a = parseInt(prompt("enter the first marks"));
+var b = parseInt(prompt("enter th second marks"));
+var c= parseInt(prompt("enter the third marks"));
+
+var total = a+b+c;
+
+markstotal =300
+console.log("total marks" + markstotal);
+console.log("obtained marks "+total)
+var per = (total/markstotal)*100;
+console.log("percentage " +per,"%");
+
+if (per >= 80 ){
+    console.log("Grade: A-one");
+    console.log("Remarks: Excellent")
+}else if(per >= 70){
+    console.log("Grade: A");
+    console.log("Remarks: Good");
+}else if(per >=60){
+    console.log("Grade: B");
+    console.log("Remarks: Need to improve");
+}else if( per < 60){
+    console.log("Grade: Fail");
+    console.log("Remarks : Sorry")
+}
+
+// program 4 secret number
+
+var secret = 5;
+
+var guess= prompt("guess a Number");
+
+if(guess == secret){
+    alert("Bingo,Correct");
+}else if (guess > secret){
+    alert("Close enough to the Correct answer");
+}else{
+    alert("try again");
+}
+ 
+program 5 even or odd
+
+var number = prompt("Enter the number");
+
+if(number % 2 == 0){
+    alert ("Even")
+}else if (number%2 !== 0){
+    alert("Odd")
+}
+
+ //program 6 calculator
+
+var first = parseInt(prompt("enter the fist number"));
+var second = parseInt(prompt("enter the second number"));
+var operation = prompt("opertaion apply + , - ,* ,/");
+
+var add = first + second;
+var subtract = first - second;
+var multipcation = first * second;
+var divide = first / second;
+
+
+if (operation == "+"){
+    alert("you choose addition " + first +" + " + second + " is " + add);
+
+}else if(operation == "-"){
+    alert("you choose subtraction "+ subtract);
+}else if(operation == "*"){
+    alert("you choose multiplication "+ multipcation);
+}else if(operation == "/"){
+    aler("you choose division "+ divide);
+}
+
+program 7 positive or negatve
+
+var number = prompt("please enter the number");
+
+if(number >= 1 ){
+    alert("positive")
+}else if(number <=-1 ){
+    alert("negatve");
+}else if(number == 0){
+    alert("zero");
+}
+
+
+program 8 charcteris vowel
+
+var char = prompt("enter a charatter");
+
+var vowel = ["a","e","i","o","u"];
+
+for(i =0 ; i<=vowel.length; i++){
+    if(char === vowel){
+
+
+//program  11 time
+
+var time =parseInt(prompt("enter time in 2400 series"));
+
+var pm = 12-(time/100);
+var am = (time/100);
+
+if(time >= 000 && time < 1259){
+  alert("Good morning "+ " "+ " is" +am + "AM");
+}else if(time >= 1200 && time <= 1700){
+  alert("good afternoon " +"It's " + pm + "PM");
+}else if(time >= 1700 && time <=2100){
+  alert("good evening " + "It's " + pm +"PM")
+}else if( time >=2100 && time <= 2359){
+  alert("good night " + "Its" + pm + "PM")
+}
+  
